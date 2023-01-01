@@ -7,7 +7,7 @@ import 'package:shopping_application_bloc_demo/screens/welcome_screen.dart';
 
 var routes = {
   WelcomeScreen.route : (context) => const WelcomeScreen(),
-  LoginScreen.route : (context) => const LoginScreen(),
+  LoginScreen.route : (context) => LoginScreen(),
   SignUpScreen.route : (context) => const SignUpScreen(),
   HomeScreen.route : (context) => const HomeScreen(),
   DetailsScreen.route : (context) => const DetailsScreen(),
