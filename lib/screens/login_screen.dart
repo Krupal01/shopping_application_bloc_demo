@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shopping_application_bloc_demo/screens/home_screem.dart';
 import 'package:shopping_application_bloc_demo/screens/signup_screen.dart';
 import 'package:shopping_application_bloc_demo/widgets/buttons.dart';
+import 'package:shopping_application_bloc_demo/widgets/header_text.dart';
+import 'package:shopping_application_bloc_demo/widgets/spacer.dart';
 
 class LoginScreen extends StatelessWidget {
   static const route = '/login_screen';
@@ -19,26 +21,15 @@ class LoginScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                "Login",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              const SizedBox(
-                height: 20.0,
-              ),
+              HeaderText(text: "Login"),
+              Space(),
               TextFormField(
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'UserName',
                 ),
               ),
-              const SizedBox(
-                height: 20.0,
-              ),
+              Space(),
               TextFormField(
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
