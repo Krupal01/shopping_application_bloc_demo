@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_application_bloc_demo/screens/login_screen.dart';
 import 'package:shopping_application_bloc_demo/widgets/buttons.dart';
 import 'package:shopping_application_bloc_demo/widgets/header_text.dart';
 import 'package:shopping_application_bloc_demo/widgets/spacer.dart';
@@ -98,7 +99,9 @@ class SignUpScreen extends StatelessWidget {
                 ),
               ),
               PaddingButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.popAndPushNamed(context, LoginScreen.route);
+                },
                 child: const Text(
                   "SignUp With Google",
                   style: TextStyle(
@@ -122,7 +125,9 @@ class SignUpScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.popAndPushNamed(context, LoginScreen.route);
+                  },
                   child: const Text(
                     "Already have account? Login",
                     style: TextStyle(

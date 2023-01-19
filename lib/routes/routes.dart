@@ -1,6 +1,6 @@
 import 'package:shopping_application_bloc_demo/screens/cart_screen.dart';
 import 'package:shopping_application_bloc_demo/screens/details_screen.dart';
-import 'package:shopping_application_bloc_demo/screens/home_screem.dart';
+import 'package:shopping_application_bloc_demo/screens/home_screen.dart';
 import 'package:shopping_application_bloc_demo/screens/login_screen.dart';
 import 'package:shopping_application_bloc_demo/screens/signup_screen.dart';
 import 'package:shopping_application_bloc_demo/screens/welcome_screen.dart';

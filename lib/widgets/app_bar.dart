@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_application_bloc_demo/widgets/header_text.dart';
 
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Color? backgroundColor;
@@ -8,6 +9,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double? height;
   final List<Widget>? menuItem;
   final bool hideBack;
+  final Widget? leading;
 
   const MainAppBar({
     super.key,
@@ -16,8 +18,9 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.icon,
     this.title = '',
     this.menuItem,
-    this.height: kToolbarHeight,
+    this.height= kToolbarHeight,
     this.hideBack = false,
+    this.leading,
     });
 
   @override
@@ -29,16 +32,10 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: menuItem,
       toolbarHeight: preferredSize.height,
       iconTheme: IconThemeData(color: textIconColor),
-      title: Text(
-        title!,
-        style: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-          color: textIconColor,
-        ),
-      ),
+      title: HeaderText(text: title.toString()),
       backgroundColor: backgroundColor,
       centerTitle: true,
+      leading: leading,
     );
   }
 }
