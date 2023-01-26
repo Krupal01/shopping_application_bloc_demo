@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_application_bloc_demo/screens/details_screen.dart';
 import 'package:shopping_application_bloc_demo/widgets/app_bar.dart';
 import 'package:shopping_application_bloc_demo/widgets/bottom_nav_bar.dart';
 import 'package:shopping_application_bloc_demo/widgets/chips.dart';
@@ -57,6 +58,9 @@ class HomeScreen extends StatelessWidget {
                 itemBuilder: ((context, index) {
                   return ShoppingItem(
                     imageUrl: "",
+                    onItemTap: () {
+                      Navigator.pushNamed(context, DetailsScreen.route);
+                    },
                   );
                 }),
               ),

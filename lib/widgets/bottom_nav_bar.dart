@@ -21,21 +21,29 @@ class _MainBottomNavbarState extends State<MainBottomNavbar> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      unselectedIconTheme: const IconThemeData(color: Colors.black26 , size: 20),
+        selectedIconTheme: const IconThemeData(color: Colors.black , size: 20),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home_mini_outlined),
             label: 'Home',
-            backgroundColor: Colors.green,
+            // backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
-            backgroundColor: Colors.yellow,
+            icon: Icon(Icons.save_outlined ),
+            label: 'Saved',
+          
+            // backgroundColor: Colors.yellow,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-            backgroundColor: Colors.blue,
+            icon: Icon(Icons.shopping_cart_outlined ),
+            label: 'Cart',
+            // backgroundColor: Colors.blue,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings_outlined ),
+            label: 'Setting',
+            // backgroundColor: Colors.blue,
           ),
         ],
         type: BottomNavigationBarType.shifting,
